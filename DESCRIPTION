@@ -1,6 +1,6 @@
 Package: DLFM
 Type: Package
-Version: 0.1.0
+Version: 0.1.1
 Title: Distributed Laplace Factor Model
 Authors@R: c(person(given = "Guangbao",
                         family = "Guo",
@@ -25,5 +25,5 @@ Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Maintainer: Guangbao Guo <ggb11111111@163.com>
 Repository: CRAN
-Date/Publication: 2025-10-30 20:10:08 UTC
-Packaged: 2025-10-27 12:08:43 UTC; R7000
+Date/Publication: 2025-11-14 12:40:22 UTC
+Packaged: 2025-11-14 08:54:42 UTC; R7000
