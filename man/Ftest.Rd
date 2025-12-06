@@ -4,12 +4,24 @@
 \alias{Ftest}
 \title{Apply the Farmtest method to the Laplace factor model}
 \usage{
-Ftest(data, p1)
+Ftest(
+  data,
+  p1,
+  alpha = 0.05,
+  K = -1,
+  alternative = c("two.sided", "less", "greater")
+)
 }
 \arguments{
 \item{data}{A matrix or data frame of simulated or observed data from a Laplace factor model.}
 
-\item{p1}{The proportion of non-zero hypotheses.}
+\item{p1}{The number or proportion of non-zero hypotheses.}
+
+\item{alpha}{The significance level for controlling the false discovery rate (default: 0.05).}
+
+\item{K}{The number of factors to estimate (default: -1, meaning auto-detect).}
+
+\item{alternative}{The alternative hypothesis: "two.sided", "less", or "greater" (default: "two.sided").}
 }
 \value{
 A list containing the following elements:
@@ -17,6 +29,8 @@ A list containing the following elements:
 \item{Power}{The statistical power of the test, which is the probability of correctly rejecting a false null hypothesis.}
 \item{PValues}{A vector of p-values associated with each hypothesis test.}
 \item{RejectedHypotheses}{The total number of hypotheses that were rejected by the FarmTest.}
+\item{reject}{Indices of rejected hypotheses.}
+\item{means}{Estimated means.}
 }
 \description{
 This function simulates data from a Lapalce factor model and applies the FarmTest
