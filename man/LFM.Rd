@@ -32,15 +32,12 @@ including:
 - `Skew-Laplace`: Skew-Laplace distribution
 }
 \examples{
-library(MASS)
-library(matrixcalc)
-library(relliptical)
 n <- 1000
 p <- 10
 m <- 5
 sigma1 <- 1
 sigma2 <- matrix(c(1,0.7,0.7,1), 2, 2)
-distribution_type <- "truncated_laplace"
+distribution_type <- "Asymmetric Log_Laplace"
 results <- LFM(n, p, m, distribution_type)
 print(results)
 }

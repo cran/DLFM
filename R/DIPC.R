@@ -7,13 +7,21 @@
 #' @param K Number of nodes (distributed splits).
 #' @return List with per-node results and aggregated averages.
 #' @examples
-#' library(LFM)
-#' data_from_package <- Wine
-#' data_a <- Wine
+#' library(LaplacesDemon)
+#' library(MASS)
+#' n=1000
+#' p=10
 #' m=5
-#' eta=0.8
-#' K=2
-#' results <- DIPC(data_a, m, eta, K)
+#' mu=t(matrix(rep(runif(p,0,1000),n),p,n))
+#' mu0=as.matrix(runif(m,0))
+#' sigma0=diag(runif(m,1))
+#' F=matrix(mvrnorm(n,mu0,sigma0),nrow=n)
+#' A=matrix(runif(p*m,-1,1),nrow=p)
+#' lanor <- rlaplace(n*p,0,1)
+#' epsilon=matrix(lanor,nrow=n)
+#' D=diag(t(epsilon)%*%epsilon)
+#' data=mu+F%*%t(A)+epsilon
+#' results <- DIPC(data, m, eta=0.8, K=5)
 #' @export
 DIPC <- function(data, m, eta, K) {
   Ai_list <- list()

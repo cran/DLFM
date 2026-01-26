@@ -20,8 +20,19 @@ Asa,Dsa
 The stochastic approximation principal component can handle online data sets with highly correlated.
 }
 \examples{
-library(LFM)
-data_from_package <- Wine
-data_a <- Wine
-SAPC(data=data_a,m=3,eta=0.8) 
+library(LaplacesDemon)
+library(MASS)
+n=1000
+p=10
+m=5
+mu=t(matrix(rep(runif(p,0,1000),n),p,n))
+mu0=as.matrix(runif(m,0))
+sigma0=diag(runif(m,1))
+F=matrix(mvrnorm(n,mu0,sigma0),nrow=n)
+A=matrix(runif(p*m,-1,1),nrow=p)
+lanor <- rlaplace(n*p,0,1)
+epsilon=matrix(lanor,nrow=n)
+D=diag(t(epsilon)\%*\%epsilon)
+data=mu+F\%*\%t(A)+epsilon
+SAPC(data=data,m=3,eta=0.8) 
 }
