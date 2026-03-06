@@ -1,6 +1,6 @@
 Package: DLFM
 Type: Package
-Version: 0.2.2
+Version: 0.2.3
 Title: Distributed Laplace Factor Model
 Authors@R: 
     c(person(given = "Guangbao",
@@ -21,13 +21,14 @@ Imports: MASS, LaplacesDemon, matrixcalc, stats
 Depends: R (>= 3.5.0)
 Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
+LazyData: true
 BuildManual: yes
 NeedsCompilation: no
 Language: en-US
-# Date/Publication: 2025-01-25
+# Date/Publication: 2025-03-5
 Repository: CRAN
-Packaged: 2026-01-26 02:42:34 UTC; R7000
+Packaged: 2026-03-05 12:21:48 UTC; R7000
 Author: Guangbao Guo [aut, cre],
   Siqi Liu [aut]
 Maintainer: Guangbao Guo <ggb11111111@163.com>
-Date/Publication: 2026-01-26 09:50:29 UTC
+Date/Publication: 2026-03-06 12:30:02 UTC
