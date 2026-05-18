@@ -1,6 +1,6 @@
-3ab3a488cb9b78935c9b5983b20aae57 *DESCRIPTION
+7ae2c8d10189eefa523f0d1381b5bf5d *DESCRIPTION
 5f57b4180211e9606a1e020980647475 *LICENSE
-5ddf6eadbd24a8d2f93b51e7b5862dc5 *NAMESPACE
+09b6b65f77525dd3983de8ff3e931ffb *NAMESPACE
 c568ae53efb445bec8d5966e6b782558 *R/DGulPC.R
 b699088552cb01ba516cacf7a4b2e87e *R/DIPC.R
 024f560ccc2882afc149f754bc1c6cb7 *R/DPC.R
@@ -15,7 +15,13 @@ cbb5fb647234d3b5db603286ba1243fe *R/LFM.R
 b014879c0144fef929165413445d3f72 *R/PC.R
 cb6ea1f275f42f539402dd836794cac8 *R/PPC.R
 67a14d28fa14dec5cadfa01491b38b9c *R/SAPC.R
+712a847482b50a668840d84b8c2ad5d9 *R/calculate_DAA.R
+fa94bbe624f7b63c95445b8c64bfa465 *R/estimate_AD_from_OSDR.R
 33c06c5086b4c95cbc527837b4190504 *R/factor.tests.R
+008b9c97302ad185ddf32b93e977742e *R/frobenius.norm.R
+57321f273cc7dc7ca3085a4ce005bd59 *R/generate_asymmetric_laplace.R
+b29f6688e3c50b5533152b68590a5946 *R/generate_multivariate_laplace.R
+3241d529b4fd2069325be0202ce1be8c *R/generate_skew_laplace.R
 d5d39663317a7c4dec1076717b58b0a2 *R/online_sir_lfm.R
 eb75cba1c1448a86ce000f2b7eaef492 *R/osdr_lfm.R
 b59f8d0b977c5cd172fd8d0af19957b8 *data/Australian.rda
@@ -56,8 +62,14 @@ bd6304d43a8011bfaef686aa3cf6c4ca *man/SAPC.Rd
 9cee9c464b20afd306fd36287f9b93b6 *man/Sonar.Rd
 33b0c23bde1b6987d5cde2ce064d4ccc *man/Wine.Rd
 d5e005d1bf8942b200e27937259f762a *man/bankruptcy.Rd
+ed86429d8399552c49d0df01a70861f8 *man/calculate_DAA.Rd
 2477e5c7a29346b310b178662173c46d *man/concrete.Rd
+7e067b85f942be4ddd9c065e0d60097e *man/estimate_AD_from_OSDR.Rd
 21dbb9072ede5c2fc58eda40739b837d *man/factor.tests.Rd
+ec1c1468f7e1461964f8967ebf47753d *man/frobenius.norm.Rd
+39ed1293c1bddf5d0b0b113f3696e716 *man/generate_asymmetric_laplace.Rd
+37686dfefbe5a5a94e1aec7a87647dbc *man/generate_multivariate_laplace.Rd
+ef02ce35f7e1495b70583befbb7cf921 *man/generate_skew_laplace.Rd
 74427a1d228e1ab9168a1e0aebb98002 *man/ionosphere.Rd
 52a8f96ae0bb7ebfe9b678b34fb20597 *man/new_energy_vehicle.Rd
 5bb87b968098f28cfbd82b5b46cad5c9 *man/online_sir_lfm.Rd
